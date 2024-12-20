@@ -61,7 +61,7 @@ scene.add(floor);
 //load the model
 let model;
 const loader = new GLTFLoader();
-loader.load("./model/character.gltf", (gltf) => {
+loader.load("../model/character.gltf", (gltf) => {
   model = gltf.scene;
   model.position.set(0.1, -2, -0.4);
   model.scale.set(2, 2, 2);
