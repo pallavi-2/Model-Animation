@@ -61,7 +61,7 @@ scene.add(floor);
 //load the model
 let model;
 const loader = new GLTFLoader();
-loader.load("http://localhost:5173/model/character.gltf", (gltf) => {
+loader.load("./model/character.gltf", (gltf) => {
   model = gltf.scene;
   model.position.set(0.1, -2, -0.4);
   model.scale.set(2, 2, 2);
@@ -79,6 +79,7 @@ loader.load("http://localhost:5173/model/character.gltf", (gltf) => {
 let bounceSpeed = 0.02; // Speed of the bounce
 let bounceHeight = 0.01; // Height of the bounce
 let bounceTime = 0;
+
 function animate() {
   bounceTime += bounceSpeed;
   requestAnimationFrame(animate);
